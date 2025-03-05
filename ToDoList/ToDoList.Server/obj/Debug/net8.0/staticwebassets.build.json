@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "et9b38bYoXdKT263eAdtKYHXr6L1rNjXGjrO74dIF5c=",
+  "Source": "ToDoList.Server",
+  "BasePath": "_content/ToDoList.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\Projects Freelance\\MurguiaTest\\ToDoList\\todolist.client\\todolist.client.esproj",
+      "Version": 2,
+      "Source": "todolist.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
