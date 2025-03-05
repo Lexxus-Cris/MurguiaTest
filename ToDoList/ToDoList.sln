@@ -7,11 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoList.Server", "ToDoList
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "todolist.client", "todolist.client\todolist.client.esproj", "{86F720DC-943A-473F-810A-19A4C249FC98}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{15AC2891-F1A0-47AF-B8D1-B7A776F5BC3D}"
-	ProjectSection(SolutionItems) = preProject
-		assets\tareas.csv = assets\tareas.csv
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
