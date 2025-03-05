@@ -1,45 +1,36 @@
-import {  Box, Paper, Typography } from "@mui/material"
-import { useState } from "react";
+import { useDispatch } from "react-redux";
+import {  Box, Typography } from "@mui/material"
 import { CheckboxCompleted } from "../components/CheckboxCompleted";
 import { DeleteBtn } from "../components/DeleteBtn";
 import CardItem from "../components/CardItem";
+import { useDeleteTareaMutation, useGetTareasCompletadasQuery, usePutTareaMutation } from "../../../store/api/apiSlice";
 
 const CompletedListView = () => {
-    const [checked, setChecked] = useState([0]);
 
-    const handleToggle = (value) => () => {
-        const currentIndex = checked.indexOf(value);
-        const newChecked = [...checked];
+    const { data } = useGetTareasCompletadasQuery();
 
-        if (currentIndex === -1) {
-        newChecked.push(value);
-        } else {
-        newChecked.splice(currentIndex, 1);
-        }
+    const [ triggerPut, { isSuccess: successPut, isError: errorPut }] = usePutTareaMutation();
+    const [ triggerDelete, { isSuccess: successDel, isError: errorDel } ] = useDeleteTareaMutation();
 
-        setChecked(newChecked);
-    };
+    const dispatch = useDispatch();
 
-    const editTodo = () => {
-        
-    }
     return (
         <Box className='flex flex-wrap flex-col gap-2 max-w-sm my-3'>
             <Typography variant="h6" className="text-slate-500 !text-base">COMPLETADAS</Typography>
-            <CardItem>
-                <div className="flex items-center">
-                    <CheckboxCompleted />
-                    <Typography>Prueba test 1</Typography>
-                </div>
-                <DeleteBtn />
-            </CardItem>
-            <CardItem>
-                <div className="flex items-center">
-                    <CheckboxCompleted />
-                    <Typography>Prueba test 1</Typography>
-                </div>
-                <DeleteBtn />
-            </CardItem>
+            {
+                data?.length <= 0
+                ? <Typography variant="h6">No se han encontrado tareas completadas</Typography>
+                : data?.map(tarea => (
+                <CardItem
+                    key={tarea.id}
+                >
+                    <div className="flex items-center">
+                        <CheckboxCompleted tarea={tarea} triggerPut={triggerPut} isSuccess={successPut} isError={errorPut} />
+                        <Typography>{tarea.descripcion}</Typography>
+                    </div>
+                    <DeleteBtn id={tarea.id} triggerDelete={triggerDelete} isSuccess={successDel} isError={errorDel} dispatch={dispatch} />
+                </CardItem>
+            ))}
         </Box>
     )
 }

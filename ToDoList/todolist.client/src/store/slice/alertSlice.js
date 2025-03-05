@@ -13,22 +13,22 @@ export const alertSlice = createSlice({
     reducers: {
         successAlert: (state, { payload }) => {
             state.open = true;
-            state.description = payload.description;
+            state.description = payload;
             state.type = 'success';
         },
         infoAlert: (state, { payload }) => {
             state.open = true;
-            state.description = payload.description;
+            state.description = payload;
             state.type = 'info';
         },
         warningAlert: (state, { payload }) => {
             state.open = true;
-            state.description = payload.description;
+            state.description = payload;
             state.type = 'warning';
         },
         errorAlert: (state, { payload }) => {
             state.open = true;
-            state.description = payload.description;
+            state.description = payload;
             state.type = 'error';
         },
         closeAlert: (state) => {

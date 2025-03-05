@@ -1,15 +1,20 @@
-import { Button, FormControl, InputAdornment, InputLabel, OutlinedInput } from "@mui/material"
+import { Button, InputAdornment } from "@mui/material"
+import { TextFieldElement } from "react-hook-form-mui"
+import { CancelEditBtn } from "./CancelEditBtn"
 
 export const InputEditToDo = () => {
     return (
-        <FormControl fullWidth variant="outlined" className="bg-slate-50 max-w-sm !my-3" >
-            <InputLabel htmlFor='add-item'>Editar tarea</InputLabel>
-            <OutlinedInput
-                id="add-item"
-                type="text"
-                endAdornment={
-                    <InputAdornment position="end">
-                        <Button
+        <TextFieldElement
+            className="bg-slate-50 !max-w-sm w-full"
+            required
+            type='text'
+            margin='dense'
+            label='Editar tarea'
+            name='descripcion'
+            slotProps={{
+                input: {
+                    endAdornment: <InputAdornment position="end">
+                            <Button
                             variant="contained"
                             aria-label="agregar elemento"
                             type="submit"
@@ -17,10 +22,11 @@ export const InputEditToDo = () => {
                         >
                             Editar
                         </Button>
+                        <CancelEditBtn />
                     </InputAdornment>
                 }
-                label='Agregar elemento'
-            />
-        </FormControl>
+            }}
+            // {...register('descripcion')}
+        />
     )
 }
