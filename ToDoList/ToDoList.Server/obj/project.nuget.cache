@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gnp2kUMH5CBSxchn/lOvvHXF6llKVfpcn6uM2gvXnFc/ou299sMTfZoprG6URwnckLqB4bkOGt7/E1jF8wmaVw==",
+  "dgSpecHash": "QkcuXUH6XvdkDQ0rlE0SvZaQqCylh6TwaiGkLqlSC/QxAeTw+btXFbFb7ORQNee3i0c3zBt8NRJgHA6cOdlVuQ==",
   "success": true,
   "projectFilePath": "D:\\Projects Freelance\\MurguiaTest\\ToDoList\\ToDoList.Server\\ToDoList.Server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Uriel\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
     "C:\\Users\\Uriel\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.13\\microsoft.aspnetcore.spaproxy.8.0.13.nupkg.sha512",
     "C:\\Users\\Uriel\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Uriel\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

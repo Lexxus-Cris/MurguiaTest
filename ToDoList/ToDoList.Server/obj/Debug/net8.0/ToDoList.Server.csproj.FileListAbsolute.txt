@@ -34,3 +34,4 @@ D:\Projects Freelance\MurguiaTest\ToDoList\ToDoList.Server\obj\Debug\net8.0\refi
 D:\Projects Freelance\MurguiaTest\ToDoList\ToDoList.Server\obj\Debug\net8.0\ToDoList.Server.pdb
 D:\Projects Freelance\MurguiaTest\ToDoList\ToDoList.Server\obj\Debug\net8.0\ToDoList.Server.genruntimeconfig.cache
 D:\Projects Freelance\MurguiaTest\ToDoList\ToDoList.Server\obj\Debug\net8.0\ref\ToDoList.Server.dll
+D:\Projects Freelance\MurguiaTest\ToDoList\ToDoList.Server\bin\Debug\net8.0\CsvHelper.dll
